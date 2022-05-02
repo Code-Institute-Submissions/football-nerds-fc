@@ -1,3 +1,11 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+class FootballQuizQuestion:
+    """
+    Model a real-world entity - in this case, and
+    because it's a quiz, it's a data type/class for a
+    question.
+    Stores the question's prompt and the answer, all
+    the information we need to create a question.
+    """
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer

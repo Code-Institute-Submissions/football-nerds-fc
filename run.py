@@ -65,7 +65,7 @@ def run_football_quiz(football_questions_and_answers):
                 # Input turns into an integer to match answers on question objects list
                 football_answer = int(input(football_question.prompt))
                 # If statement to validate the user's input
-                if football_answer in range(1, 3):
+                if football_answer in range(1, 4):
                     # A nested if statement - to check if the answer is right
                     if football_answer == football_question.answer:
                         # If true, increment the score variable by 1 and inform user

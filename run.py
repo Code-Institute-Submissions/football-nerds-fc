@@ -79,7 +79,7 @@ def run_football_quiz(football_questions_and_answers):
                     print("Please enter a number between 1 and 3.\n")
                     continue
             # Except block handles input errors
-            except:
+            except ValueError:
                 print("Please enter a number between 1 and 3.\n")
                 continue
             break

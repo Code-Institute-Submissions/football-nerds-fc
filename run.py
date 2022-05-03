@@ -56,24 +56,33 @@ def run_football_quiz(football_questions_and_answers):
     # A for loop - to loop through all the questions on the list of questions
     # For each of those, we want to do something
     for football_question in football_questions_and_answers:
-        # To ask the user a question and store the answer inside of a variable
-        # It'll represent the answer that the user gave for the question
-        # Input turns into an integer to match answers on question objects list
-        football_answer = int(input(football_question.prompt))
-        # If statement to validate the user's input
-        if football_answer in range(1, 3):
-            # A nested if statement - to check if the answer is right
-            if football_answer == football_question.answer:
-                # If true, increment the score variable by 1 and inform user
-                print("Correct!\n")
-                score += 1
-                # If not true, inform user of wrong answer provided
-            else:
-                print("Incorrect! And this was an easy one! Focus!\n")
-        # Close outer if statement - prompt user to enter valid input
-        else:
-            print("Please enter a number between 1 and 3.\n")
-            continue
+        # While loop with try/except input validation
+        while True:
+            # Try block to test the code for input errors
+            try:
+                # To ask the user a question and store the answer inside of a variable
+                # It'll represent the answer that the user gave for the question
+                # Input turns into an integer to match answers on question objects list
+                football_answer = int(input(football_question.prompt))
+                # If statement to validate the user's input
+                if football_answer in range(1, 3):
+                    # A nested if statement - to check if the answer is right
+                    if football_answer == football_question.answer:
+                        # If true, increment the score variable by 1 and inform user
+                        print("Correct!\n")
+                        score += 1
+                        # If not true, inform user of wrong answer provided
+                    else:
+                        print("Incorrect! And this was an easy one! Focus!\n")
+                # Close outer if statement - prompt user to enter valid input
+                else:
+                    print("Please enter a number between 1 and 3.\n")
+                    continue
+            # Except block handles input errors
+            except:
+                print("Please enter a number between 1 and 3.\n")
+                continue
+            break
     # At the end, we print how the user did
     print(f"You got {score}/{len(football_questions_and_answers)} correct!")
 

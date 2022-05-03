@@ -1,3 +1,6 @@
+import random
+
+
 class FootballQuizQuestion:
     """
     Model a real-world entity - in this case, and because it's a quiz,
@@ -40,6 +43,14 @@ football_questions_and_answers = [
     FootballQuizQuestion(football_question_prompts[8], 3),
     FootballQuizQuestion(football_question_prompts[9], 1)
 ]
+
+# Random shuffle method to randomize the order of the quiz questions
+random.shuffle(football_questions_and_answers)
+
+print("\n\nWelcome to the Football Nerds FC quiz!\n\n")
+print("Do you think you know everything about football?\n\n")
+print("Do you have what it takes to be a true football nerd?\n\n")
+print("Let's find out!\n\n\nGood luck!\n\n")
 
 
 def run_football_quiz(football_questions_and_answers):
@@ -84,8 +95,8 @@ def run_football_quiz(football_questions_and_answers):
                 continue
             break
     # At the end, print how the user did
-    print(f"You got {score}/{len(football_questions_and_answers)} correct!")
-    print("WELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!")
+    print(f"\nYou got {score}/{len(football_questions_and_answers)} correct!")
+    print("\n\nWELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!\n\n")
 
 
 # Call the run_football_quiz function

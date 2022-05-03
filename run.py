@@ -58,7 +58,8 @@ def run_football_quiz(football_questions_and_answers):
     for football_question in football_questions_and_answers:
         # To ask the user a question and store the answer inside of a variable
         # It'll represent the answer that the user gave for the question
-        football_answer = input(football_question.prompt)
+        # Input turns into an integer to match answers on question objects list
+        football_answer = int(input(football_question.prompt))
         # An if statement - to check if the answer is right
         if football_answer == football_question.answer:
             # If true, we'll increment the score variable by 1

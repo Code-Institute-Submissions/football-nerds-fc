@@ -85,6 +85,7 @@ def run_football_quiz(football_questions_and_answers):
             break
     # At the end, we print how the user did
     print(f"You got {score}/{len(football_questions_and_answers)} correct!")
+    print("WELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!")
 
 
 # Call the run_football_quiz function

@@ -1,4 +1,5 @@
 import random
+# Random package imported so the shuffle method can be used
 
 
 class FootballQuizQuestion:
@@ -47,6 +48,7 @@ football_questions_and_answers = [
 # Random shuffle method to randomize the order of the quiz questions
 random.shuffle(football_questions_and_answers)
 
+# Welcome and "let's play" message for the user
 print("\n\nWelcome to the Football Nerds FC quiz!\n\n")
 print("Do you think you know everything about football?\n\n")
 print("Do you have what it takes to be a true football nerd?\n\n")

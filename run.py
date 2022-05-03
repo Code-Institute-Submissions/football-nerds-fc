@@ -60,15 +60,15 @@ def run_football_quiz(football_questions_and_answers):
         while True:
             # Try block to test the code for input errors
             try:
-                # To ask the user a question and store the answer inside of a variable
-                # It'll represent the answer that the user gave for the question
-                # Input turns into an integer to match answers on question objects list
+                # Ask user a question and store answer in a variable
+                # Represents the answer the user gave for the question
+                # Input-to-integer to match answers on question objects list
                 football_answer = int(input(football_question.prompt))
                 # If statement to validate the user's input
                 if football_answer in range(1, 4):
                     # A nested if statement - to check if the answer is right
                     if football_answer == football_question.answer:
-                        # If true, increment the score variable by 1 and inform user
+                        # If true, increment score by 1 and inform user
                         print("Correct!\n")
                         score += 1
                         # If not true, inform user of wrong answer provided
@@ -83,7 +83,7 @@ def run_football_quiz(football_questions_and_answers):
                 print("Please enter a number between 1 and 3.\n")
                 continue
             break
-    # At the end, we print how the user did
+    # At the end, print how the user did
     print(f"You got {score}/{len(football_questions_and_answers)} correct!")
     print("WELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!")
 

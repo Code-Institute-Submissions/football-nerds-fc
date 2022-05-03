@@ -1,13 +1,13 @@
 class FootballQuizQuestion:
     """
-    Model a real-world entity - in this case, and
-    because it's a quiz, it's a data type/class for a
-    question.
-    Stores the question's prompt and the answer, its
-    attributes - all the information we need to create
-    a question.
+    Model a real-world entity - in this case, and because it's a quiz,
+    it's a data type/class for a question.
     """
     def __init__(self, prompt, answer):
+        """
+        Stores the question's prompt and the answer, its attributes - all the
+        information we need to create a question.
+        """
         self.prompt = prompt
         self.answer = answer
 
@@ -40,3 +40,33 @@ football_questions_and_answers = [
     FootballQuizQuestion(football_question_prompts[8], 3),
     FootballQuizQuestion(football_question_prompts[9], 1)
 ]
+
+
+def run_football_quiz(football_questions_and_answers):
+    """
+    Function to run the test - asks the user the questions and checks if he/she
+    got the answer right.
+    Contains one parameter - the list of question objects we want to ask the
+    user - we want to loop through each question, ask it to the user, get the
+    user's answer and check if it's right.
+    """
+    # A variable called score
+    # To keep track of how the user is doing through the test
+    score = 0
+    # A for loop - to loop through all the questions on the list of questions
+    # For each of those, we want to do something
+    for football_question in football_questions_and_answers:
+        # To ask the user a question and store the answer inside of a variable
+        # It'll represent the answer that the user gave for the question
+        football_answer = input(football_question.prompt)
+        # An if statement - to check if the answer is right
+        if football_answer == football_question.answer:
+            # If true, we'll increment the score variable by 1
+            score += 1
+    # At the end, we print how the user did
+    print(f"You got {score}/{len(football_questions_and_answers)} correct!")
+
+
+# Call the run_football_quiz function
+# Pass the list of question objects into it
+run_football_quiz(football_questions_and_answers)

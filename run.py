@@ -12,6 +12,7 @@ class FootballQuizQuestion:
         self.answer = answer
 
 
+# Question prompts
 football_question_prompts = [
     "Which player scored the fastest hat-trick in the Premier League?\n1) Sadio Mane\n2) Alan Shearer\n3) Ian Wright\n\n",
     "Which player, with 653 games, has made the most Premier League appearances?\n1) Peter Shilton\n2) Gareth Barry\n3) John Barnes\n\n",
@@ -25,6 +26,8 @@ football_question_prompts = [
     "The fastest goal scored in Premier League history came in 7.69 seconds. Who scored it?\n1) Shane Long\n2) Steven Gerrard\n3) Frank Lampard\n\n"
 ]
 
+# Question objects - a list of questions to ask and their correct answers
+# We'll be able to add as many questions as we want to it in the future
 football_questions_and_answers = [
     FootballQuizQuestion(football_question_prompts[0], 1),
     FootballQuizQuestion(football_question_prompts[1], 2),

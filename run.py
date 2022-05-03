@@ -24,3 +24,16 @@ football_question_prompts = [
     "Which three players shared the Premier League Golden Boot in 2018-19?\n1) Sergio Aguero, Jamie Vardy and Harry Kane\n2) Raheem Sterling, Eden Hazard and Callum Wilson\n3) Pierre-Emerick Aubameyang, Mohamed Salah and Sadio Mane\n\n",
     "The fastest goal scored in Premier League history came in 7.69 seconds. Who scored it?\n1) Shane Long\n2) Steven Gerrard\n3) Frank Lampard\n\n"
 ]
+
+football_questions_and_answers = [
+    FootballQuizQuestion(football_question_prompts[0], 1),
+    FootballQuizQuestion(football_question_prompts[1], 2),
+    FootballQuizQuestion(football_question_prompts[2], 3),
+    FootballQuizQuestion(football_question_prompts[3], 1),
+    FootballQuizQuestion(football_question_prompts[4], 2),
+    FootballQuizQuestion(football_question_prompts[5], 3),
+    FootballQuizQuestion(football_question_prompts[6], 1),
+    FootballQuizQuestion(football_question_prompts[7], 2),
+    FootballQuizQuestion(football_question_prompts[8], 3),
+    FootballQuizQuestion(football_question_prompts[9], 1)
+]

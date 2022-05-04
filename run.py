@@ -189,10 +189,15 @@ football_questions_and_answers = [
 random.shuffle(football_questions_and_answers)
 
 # Welcome and "let's play" message for the user
-print("\n\nWelcome to the Football Nerds FC quiz!\n\n")
-print("Do you think you know everything about football?\n\n")
-print("Do you have what it takes to be a true football nerd?\n\n")
-print("Let's find out!\n\n\nGood luck!\n\n")
+print("\n******************************************************")
+print("Welcome to the Football Nerds FC quiz!")
+print("******************************************************")
+print("Do you think you know everything about football?")
+print("******************************************************")
+print("Do you have what it takes to be a true football nerd?")
+print("******************************************************")
+print("Let's find out! Good luck!")
+print("******************************************************\n")
 
 
 def run_football_quiz(football_questions_and_answers):
@@ -237,8 +242,11 @@ def run_football_quiz(football_questions_and_answers):
                 continue
             break
     # At the end, print how the user did
-    print(f"\nYou got {score}/{len(football_questions_and_answers)} correct!")
-    print("\n\nWELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!\n\n")
+    print("******************************************************")
+    print(f"You got {score}/{len(football_questions_and_answers)} correct!")
+    print("******************************************************")
+    print("WELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!")
+    print("******************************************************\n")
 
 
 # Call the run_football_quiz function

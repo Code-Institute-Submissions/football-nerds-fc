@@ -1,5 +1,5 @@
 import random
-# Random package imported so the shuffle method can be used
+# Random package imported so the sample method can be used
 
 
 class FootballQuizQuestion:
@@ -185,8 +185,8 @@ football_questions_and_answers = [
     FootballQuizQuestion(football_question_prompts[79], 2)
 ]
 
-# Random shuffle method to randomize the order of the quiz questions
-random.shuffle(football_questions_and_answers)
+# Sample method to get a random sample list of 10 questions from the main list
+sample = random.sample(football_questions_and_answers, 10)
 
 # Welcome and "let's play" message for the user
 print("\n*********************************************************")
@@ -200,7 +200,7 @@ print("*              Let's find out! Good luck!               *")
 print("*********************************************************\n")
 
 
-def run_football_quiz(football_questions_and_answers):
+def run_football_quiz(sample):
     """
     Function to run the test - asks the user the questions and checks if he/she
     got the answer right.
@@ -213,7 +213,7 @@ def run_football_quiz(football_questions_and_answers):
     score = 0
     # A for loop - to loop through all the questions on the list of questions
     # For each of those, we want to do something
-    for football_question in football_questions_and_answers:
+    for football_question in sample:
         # While loop with try/except input validation
         while True:
             # Try block to test the code for input errors
@@ -243,7 +243,7 @@ def run_football_quiz(football_questions_and_answers):
             break
     # At the end, print how the user did
     print("************************")
-    print(f"*You got {score}/{len(football_questions_and_answers)} correct!*")
+    print(f"*You got {score}/{len(sample)} correct!*")
     print("*************************************************")
     print("*WELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!*")
     print("*************************************************\n")
@@ -251,4 +251,4 @@ def run_football_quiz(football_questions_and_answers):
 
 # Call the run_football_quiz function
 # Pass the list of question objects into it
-run_football_quiz(football_questions_and_answers)
+run_football_quiz(sample)

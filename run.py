@@ -242,11 +242,11 @@ def run_football_quiz(sample):
                 continue
             break
     # At the end, print how the user did
-    print("************************")
-    print(f"*You got {score}/{len(sample)} correct!*")
-    print("*************************************************")
-    print("*WELL DONE! YOU'RE THE FOOTBALL NERD OF THE DAY!*")
-    print("*************************************************\n")
+    print("************************************************")
+    print(f"*             You got {score}/{len(sample)} correct!            *")
+    print("************************************************")
+    print("*   YES! YOU'RE THE FOOTBALL NERD OF THE DAY!  *")
+    print("************************************************\n")
 
 
 # Call the run_football_quiz function

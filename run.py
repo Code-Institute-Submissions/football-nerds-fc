@@ -264,6 +264,7 @@ while True:
         sample = random.sample(football_questions_and_answers, 10)
         run_football_quiz(sample)
     elif play_again == "n":
+        # To exit the code safely
         raise SystemExit("\nThank you for playing!\n")
     else:
         print("Please enter 'y' or 'n'.\n")

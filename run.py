@@ -252,3 +252,13 @@ def run_football_quiz(sample):
 # Call the run_football_quiz function
 # Pass the list of question objects into it
 run_football_quiz(sample)
+
+while True:
+    play_again = str(input("Play again (y/n)?\n"))
+    if play_again == "y":
+        run_football_quiz(sample)
+    elif play_again == "n":
+        raise SystemExit("Thank you for playing!")
+    else:
+        print("Please enter 'y' or 'n'.\n")
+        continue

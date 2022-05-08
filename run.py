@@ -254,7 +254,7 @@ def run_football_quiz(sample):
 run_football_quiz(sample)
 
 while True:
-    play_again = str(input("Play again (y/n)?\n"))
+    play_again = str.lower(input("Play again (y/n)?\n"))
     if play_again == "y":
         sample = random.sample(football_questions_and_answers, 10)
         run_football_quiz(sample)

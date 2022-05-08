@@ -256,9 +256,10 @@ run_football_quiz(sample)
 while True:
     play_again = str(input("Play again (y/n)?\n"))
     if play_again == "y":
+        sample = random.sample(football_questions_and_answers, 10)
         run_football_quiz(sample)
     elif play_again == "n":
-        raise SystemExit("Thank you for playing!")
+        raise SystemExit("\nThank you for playing!\n")
     else:
         print("Please enter 'y' or 'n'.\n")
         continue

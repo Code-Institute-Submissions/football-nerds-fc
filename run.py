@@ -253,8 +253,13 @@ def run_football_quiz(sample):
 # Pass the list of question objects into it
 run_football_quiz(sample)
 
+# While loop to offer the user the option to play again
+# Also to validate the user's input
 while True:
+    # Variable for user's input - a lower method is used to convert input
+    # into lowercase so it matches the required y/n user input
     play_again = str.lower(input("Play again (y/n)?\n"))
+    # If statement to run the game again or exit it, and to validate the data
     if play_again == "y":
         sample = random.sample(football_questions_and_answers, 10)
         run_football_quiz(sample)

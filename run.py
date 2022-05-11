@@ -2,7 +2,7 @@ import random # Random package imported so the sample method can be used
 import json # To import the .json file with the question prompts
 
 
-class FootballQuizQuestion:
+class FootballQuizQuestion (object):
     """
     Model a real-world entity - in this case, and because it's a quiz,
     it's a data type/class for a question.
@@ -15,6 +15,10 @@ class FootballQuizQuestion:
         self.prompt = prompt
         self.answer = answer
 
+
+# To link the main run.py file to the external .json file with the prompts
+questions_file = open("questions.json")
+football_question_prompts = json.load(questions_file)
 
 # Question prompts
 football_question_prompts = [

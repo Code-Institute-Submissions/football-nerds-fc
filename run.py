@@ -1,5 +1,5 @@
-import random # Random package imported so the sample method can be used
-import json # To import the .json file with the question prompts
+import random  # Random package imported so the sample method can be used
+import json  # To import the .json file with the question prompts
 
 
 class FootballQuizQuestion (object):
@@ -105,20 +105,6 @@ football_questions_and_answers = [
     FootballQuizQuestion(football_question_prompts[79]["question"], 2)
 ]
 
-# Sample method to get a random sample list of 10 questions from the main list
-sample = random.sample(football_questions_and_answers, 10)
-
-# Welcome and "let's play" message for the user
-print("\n*********************************************************")
-print("*         Welcome to the Football Nerds FC quiz!        *")
-print("*********************************************************")
-print("*    Do you think you know everything about football?   *")
-print("*********************************************************")
-print("* Do you have what it takes to be a true football nerd? *")
-print("*********************************************************")
-print("*              Let's find out! Good luck!               *")
-print("*********************************************************\n")
-
 
 def run_football_quiz(sample):
     """
@@ -169,23 +155,36 @@ def run_football_quiz(sample):
     print("************************************************\n")
 
 
-# Call the run_football_quiz function
-# Pass the list of question objects into it
-run_football_quiz(sample)
-
-# While loop to offer the user the option to play again
-# Also to validate the user's input
-while True:
-    # Variable for user's input - a lower method is used to convert input
-    # into lowercase so it matches the required y/n user input
-    play_again = str.lower(input("Play again (y/n)?\n"))
-    # If statement to run the game again or exit it, and to validate the data
-    if play_again == "y":
-        sample = random.sample(football_questions_and_answers, 10)
-        run_football_quiz(sample)
-    elif play_again == "n":
-        # To exit the code safely
-        raise SystemExit("\nThank you for playing!\n")
-    else:
-        print("Please enter 'y' or 'n'.\n")
-        continue
+# Main function
+if __name__ == "__main__":
+    # Sample method to get random sample list of questions from main list
+    sample = random.sample(football_questions_and_answers, 10)
+    # Welcome and "let's play" message for the user
+    print("\n*********************************************************")
+    print("*         Welcome to the Football Nerds FC quiz!        *")
+    print("*********************************************************")
+    print("*    Do you think you know everything about football?   *")
+    print("*********************************************************")
+    print("* Do you have what it takes to be a true football nerd? *")
+    print("*********************************************************")
+    print("*              Let's find out! Good luck!               *")
+    print("*********************************************************\n")
+    # Call the run_football_quiz function
+    # Pass the list of question objects into it
+    run_football_quiz(sample)
+    # While loop to offer the user the option to play again
+    # Also to validate the user's input
+    while True:
+        # Variable for user's input - a lower method is used to convert input
+        # into lowercase so it matches the required y/n user input
+        PLAY_AGAIN = str.lower(input("Play again (y/n)?\n"))
+        # If statement to run game again or exit it, and to validate the data
+        if PLAY_AGAIN == "y":
+            sample = random.sample(football_questions_and_answers, 10)
+            run_football_quiz(sample)
+        elif PLAY_AGAIN == "n":
+            # To exit the code safely
+            raise SystemExit("\nThank you for playing!\n")
+        else:
+            print("Please enter 'y' or 'n'.\n")
+            continue

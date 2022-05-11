@@ -2,7 +2,7 @@ import random  # Random package imported so the sample method can be used
 import json  # To import the .json file with the question prompts
 
 
-class FootballQuizQuestion (object):
+class FootballQuizQuestion(object):
     """
     Model a real-world entity - in this case, and because it's a quiz,
     it's a data type/class for a question.

@@ -1,5 +1,5 @@
-import random
-# Random package imported so the sample method can be used
+import random # Random package imported so the sample method can be used
+import json # To import the .json file with the question prompts
 
 
 class FootballQuizQuestion:

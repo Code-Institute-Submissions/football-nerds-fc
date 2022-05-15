@@ -29,9 +29,68 @@ Flowchart – [View](assets/flowchart/flowchart-football-nerds-fc.jpeg)
 
 In order to better visualize the steps required to build and play this game, I created a flowchart using Lucidchart, which allowed me to go through each part step-by-step and to understand what objects, features and functionalities were necessary and how to code them based on the user’s potential needs while using the app at every step of the way.
 
-Features
-•	Responsive on all device sizes
-•	Interactive elements
+## Features
+
+•	It works on all device sizes, but it's not responsive on all device sizes: it's a Python command-line app built using Python alone, so no HTML, CSS (media queries would have been used if it was a website, for example) or JavaScript were used, which is why it may not be fully responsive in smaller devices (tablets, smartphones, etc.).
+
+**•	Welcome Message**
+
+o	It welcomes the user to the game, explains its nature and challenges the user to play and be a true football nerd.
+
+[Screenshot of the welcome message here](assets/docs/welcome-message-screenshot.png)
+
+**•	Questions**
+
+o	A list of 80 questions was created for this game, and the app randomly picks 10 as a sample of questions to be asked to the user every time a new game starts. The user is provided with 3 potential answers for each question, but only one is correct, and it's up to the user to guess the correct one. When the user gets it right, a "correct" message comes up informing the user that he/she got it right:
+
+[Screenshot of the message when the user chooses the correct answer](assets/docs/question-answered-correctly-screenshot.png)
+
+o	When the user gets it wrong, an "incorrect" message comes up informing the user that he/she got it wrong:
+
+[Screenshot of the message when the user chooses the incorrect answer](assets/docs/question-answered-incorrectly-screenshot.png)
+
+**•	Input Validation and Error-handling During the Game**
+
+o	If the user inputs invalid data (any other input other than "1", "2" or "3"), an "invalid data" message comes up informing the user that he/she inputted invalid data and prompting him/her to re-enter valid data (he/she cannot proceed from the current question until valid data is inputted):
+
+[Screenshot of the message when invalid data is inputted – Questions – example 1](assets/docs/example-of-invalid-user-input-and-validation-screenshot-1.png)
+[Screenshot of the message when invalid data is inputted – Questions – example 2](assets/docs/example-of-invalid-user-input-and-validation-screenshot-2.png)
+[Screenshot of the message when invalid data is inputted – Questions – example 3](assets/docs/example-of-invalid-user-input-and-validation-screenshot-3.png)
+[Screenshot of the message when invalid data is inputted – Questions – example 4](assets/docs/example-of-invalid-user-input-and-validation-screenshot-4.png)
+
+**•	Final Result and Congratulations Message**
+
+o	When the user answers the last of the 10 questions, a message with the result (for example, 4/10 answers correct) is displayed to tell the user how he/she did, followed by a message congratulating him/her:
+
+[Screenshot of the message with the final result and the congratulations message](assets/docs/final-result-and-congratulations-message-screenshot.png)
+
+**•	Play Again Option**
+
+o	At the same time as the final result and congratulations message, a message giving the user the option to play again is displayed – if the answer is "y" (yes), the app will choose another random sample of 10 questions and the game restarts with the first of those 10 questions:
+
+[Screenshot of the message when the user chooses to play again](assets/docs/play-again-yes-screenshot.png)
+
+o	If the answer is "n" (no), a "thank you for playing" message is displayed and the game is over:
+
+[Screenshot of the message when the user chooses not to play again](assets/docs/play-again-no-screenshot.png)
+
+**•	Input Validation and Error-handling for the Play Again Option**
+
+o	If the user inputs invalid data (any other input other than "y" or "n"), an "invalid data" message comes up informing the user that he/she inputted invalid data and prompting him/her to re-enter valid data (he/she cannot proceed from the play again option until valid data is inputted):
+
+[Screenshot of the message when invalid data is inputted – Play Again Option – example 1](assets/docs/example-of-invalid-user-input-and-validation-screenshot-5.png)
+[Screenshot of the message when invalid data is inputted – Play Again Option – example 2](assets/docs/example-of-invalid-user-input-and-validation-screenshot-6.png)
+[Screenshot of the message when invalid data is inputted – Play Again Option – example 3](assets/docs/example-of-invalid-user-input-and-validation-screenshot-7.png)
+[Screenshot of the message when invalid data is inputted – Play Again Option – example 4](assets/docs/example-of-invalid-user-input-and-validation-screenshot-8.png)
+
+### Features Left to Implement
+
+•	Username input
+
+•	Showing the correct answer when the user gets the answer wrong
+
+•	A scoreboard/leaderboard with the highest scores ever to be shown at the end of each game
+
 Technologies Used
 Languages Used
 •	HTML5

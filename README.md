@@ -54,8 +54,11 @@ o	When the user gets it wrong, an "incorrect" message comes up informing the use
 o	If the user inputs invalid data (any other input other than "1", "2" or "3"), an "invalid data" message comes up informing the user that he/she inputted invalid data and prompting him/her to re-enter valid data (he/she cannot proceed from the current question until valid data is inputted):
 
 [Screenshot of the message when invalid data is inputted – Questions – example 1](assets/docs/example-of-invalid-user-input-and-validation-screenshot-1.png)
+
 [Screenshot of the message when invalid data is inputted – Questions – example 2](assets/docs/example-of-invalid-user-input-and-validation-screenshot-2.png)
+
 [Screenshot of the message when invalid data is inputted – Questions – example 3](assets/docs/example-of-invalid-user-input-and-validation-screenshot-3.png)
+
 [Screenshot of the message when invalid data is inputted – Questions – example 4](assets/docs/example-of-invalid-user-input-and-validation-screenshot-4.png)
 
 **•	Final Result and Congratulations Message**
@@ -79,8 +82,11 @@ o	If the answer is "n" (no), a "thank you for playing" message is displayed and 
 o	If the user inputs invalid data (any other input other than "y" or "n"), an "invalid data" message comes up informing the user that he/she inputted invalid data and prompting him/her to re-enter valid data (he/she cannot proceed from the play again option until valid data is inputted):
 
 [Screenshot of the message when invalid data is inputted – Play Again Option – example 1](assets/docs/example-of-invalid-user-input-and-validation-screenshot-5.png)
+
 [Screenshot of the message when invalid data is inputted – Play Again Option – example 2](assets/docs/example-of-invalid-user-input-and-validation-screenshot-6.png)
+
 [Screenshot of the message when invalid data is inputted – Play Again Option – example 3](assets/docs/example-of-invalid-user-input-and-validation-screenshot-7.png)
+
 [Screenshot of the message when invalid data is inputted – Play Again Option – example 4](assets/docs/example-of-invalid-user-input-and-validation-screenshot-8.png)
 
 ### Features Left to Implement

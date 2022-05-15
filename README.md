@@ -116,10 +116,13 @@ o	Heroku was used to deploy the live project.
 6.	[Lucidchart](https://lucid.app/documents#/dashboard?folder_id=home):
 o	Lucidchart was used to create the flowchart during the design process.
 
-Testing
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-•	W3C Markup Validator - Results
-•	W3C CSS Validator - Results
+## Testing
+
+PEP8 Online Checker was used to validate all the code on the Python file for this project to ensure there were no syntax errors.
+•	PEP8 Online Checker - [Results](assets/docs/pep8-online-results.png)
+
+The [Am I Responsive?](https://ui.dev/amiresponsive) website design tester was used to test the responsiveness of this website (though, as mentioned on the "Features" section of this README.md file, this app works on all device sizes, but it's not responsive on all device sizes – it's a Python command-line app built using Python alone, so no HTML, CSS [media queries would have been used if it was a website, for example] or JavaScript were used, which is why it may not be fully responsive in smaller devices [tablets, smartphones, etc.]). [Screenshot here](assets/docs/am-i-responsive-results.png)
+
 Testing User Stories from User Experience (UX) Section
 •	First Time Visitor Goals
 i.	As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.

@@ -93,31 +93,29 @@ o	If the user inputs invalid data (any other input other than "y" or "n"), an "i
 
 ## Data Model
 
-Not all things can be represented using, for example, strings, numbers or Booleans. Some things cannot be covered by the data types available in Python (or in any other language), which is why we should use classes and objects to create our own data types whenever necessary. I wanted to use Object-Oriented Programming (OOP) for this simple football quiz, so I created a class called "FootballQuizQuestion", which stores all the attributes a football question should have – it's a template for what a football question should be. This class contains an Initialize function, to map out all the attributes of a football question. In this case, it stores the question's prompt and the answer (its attributes), all the information we need to create the many question objects to be used by this app. When the game is first ran, a football question prompt is retrieved from a .json file, and this prompt is then passed as a parameter when creating the question object. The user is then prompted for his/her first answer, which will be validated/handled accordingly, and the game runs its course. This data model seemed appropriate for this kind of command-line game.
+Not all things can be represented using, for example, strings, numbers or Booleans. Some things cannot be covered by the data types available in Python (or in any other language), which is why we should use classes and objects to create our own data types whenever necessary. I wanted to use Object-Oriented Programming (OOP) for this simple football quiz, so I created a class called "FootballQuizQuestion", which stores all the attributes a football question should have – it's a template for what a football question should be. This class contains an Initialize function, to map out all the attributes of a football question. In this case, it stores the question's prompt and the answer (its attributes), all the information we need to create the many question objects to be used by this app. When the game is first ran, a football question prompt is retrieved from a .json file, and this prompt is then passed as a parameter when creating the question object. The user is then prompted for his/her first answer, which will be validated/handled accordingly, and the game runs its course. This data model seemed appropriate for this kind of game.
 
-Technologies Used
-Languages Used
-•	HTML5
-•	CSS3
-Frameworks, Libraries & Programs Used
-1.	Bootstrap 4.4.1:
-o	Bootstrap was used to assist with the responsiveness and styling of the website.
-2.	Hover.css:
-o	Hover.css was used on the Social Media icons in the footer to add the float transition while being hovered over.
-3.	Google Fonts:
-o	Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-4.	Font Awesome:
-o	Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-5.	jQuery:
-o	jQuery came with Bootstrap to make the navbar responsive but was also used for the smooth scroll function in JavaScript.
-6.	Git
-o	Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-7.	GitHub:
-o	GitHub is used to store the projects code after being pushed from Git.
-8.	Photoshop:
-o	Photoshop was used to create the logo, resizing images and editing photos for the website.
-9.	Balsamiq:
-o	Balsamiq was used to create the wireframes during the design process.
+## Technologies Used
+
+### Languages Used
+
+•	[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### Frameworks, Libraries & Programs Used
+
+1.	[random Python package](https://docs.python.org/3/library/random.html):
+o	Python's built-in random package was imported so the sample method could be used to retrieve a sample of ten questions from a .json file every time a new game starts.
+2.	Snipping tool:
+o	A snipping tool was used to create all the screenshots on this README.md file.	
+3.	[Git](https://git-scm.com/):
+o	Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+4.	[GitHub](https://github.com/):
+o	GitHub is used to store the project's code after being pushed from Git.
+5.	[Heroku](https://dashboard.heroku.com/apps):
+o	Heroku was used to deploy the live project.
+6.	[Lucidchart](https://lucid.app/documents#/dashboard?folder_id=home):
+o	Lucidchart was used to create the flowchart during the design process.
+
 Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 •	W3C Markup Validator - Results

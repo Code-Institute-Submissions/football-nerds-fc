@@ -6,7 +6,7 @@ Football Nerds FC is a Python command-line/terminal game, which runs on Heroku.
 It’s a multiple choice football quiz – the user has to try and answer ten football-related questions randomly picked by the app, with the final score being presented to the user at the end. There are three answers for each question (1, 2 and 3), but only one is correct. Find out if you have what it takes to be the football nerd of the day!
 
 ## User Experience (UX)
-### •	User stories
+### User stories
 #### o	First-time Visitor Goals
 
 **a.**	As a first-time user, I want to easily understand the main purpose of the game and how to play it.
@@ -23,10 +23,12 @@ It’s a multiple choice football quiz – the user has to try and answer ten fo
 
 **a.**	As a frequent user, I want to play again and again to try and answer all the football questions of this game to fully test my football knowledge.
 
-•	Wireframes
-o	Home Page Wireframe - View
-o	Mobile Wireframe - View
-o	Contact Us Page Wireframe - View
+## Flowchart
+
+Flowchart – [View](assets/flowchart/flowchart-football-nerds-fc.jpeg)
+
+In order to better visualize the steps required to build and play this game, I created a flowchart using Lucidchart, which allowed me to go through each part step-by-step and to understand what objects, features and functionalities were necessary and how to code them based on the user’s potential needs while using the app at every step of the way.
+
 Features
 •	Responsive on all device sizes
 •	Interactive elements

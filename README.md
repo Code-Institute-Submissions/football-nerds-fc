@@ -91,6 +91,10 @@ o	If the user inputs invalid data (any other input other than "y" or "n"), an "i
 
 •	A scoreboard/leaderboard with the highest scores ever to be shown at the end of each game
 
+## Data Model
+
+Not all things can be represented using, for example, strings, numbers or Booleans. Some things cannot be covered by the data types available in Python (or in any other language), which is why we should use classes and objects to create our own data types whenever necessary. I wanted to use Object-Oriented Programming (OOP) for this simple football quiz, so I created a class called "FootballQuizQuestion", which stores all the attributes a football question should have – it's a template for what a football question should be. This class contains an Initialize function, to map out all the attributes of a football question. In this case, it stores the question's prompt and the answer (its attributes), all the information we need to create the many question objects to be used by this app. When the game is first ran, a football question prompt is retrieved from a .json file, and this prompt is then passed as a parameter when creating the question object. The user is then prompted for his/her first answer, which will be validated/handled accordingly, and the game runs its course. This data model seemed appropriate for this kind of command-line game.
+
 Technologies Used
 Languages Used
 •	HTML5

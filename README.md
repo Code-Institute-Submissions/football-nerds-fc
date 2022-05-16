@@ -157,11 +157,18 @@ a.	All returning users mentioned that they played this game endless times, and t
 
 a.	Most users who tested this app mentioned that they've been playing with it almost every day and competing with other friends and family members. This is good feedback, as they still report that no errors or issues were found and that they're still learning from this app.
 
-Further Testing
-•	The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-•	The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-•	A large amount of testing was done to ensure that all pages were linking correctly.
-•	Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+### Further Testing
+
+•	The app was tested on the Google Chrome, Mozilla Firefox and Microsoft Edge browsers. It was not tested on Internet Explorer as it's no longer supported.
+
+•	It was viewed on a variety of devices such as large laptops, medium/smaller laptops, tablets, phablets and mobile phones. As mentioned before, this app works on all device sizes, but it's not responsive on all device sizes – it's a Python command-line app built using Python alone, so no HTML, CSS [media queries would have been used if it was a website, for example] or JavaScript were used, which is why it's fully functional, but it may not be fully responsive in smaller devices [tablets, smartphones, etc.]).
+
+•	A large amount of testing was done to ensure that no errors happened when running the code and no error messages were ever displayed to the user. At no point in the game is the user stuck in a part of the program where he/she cannot move from (any invalid data inputted by the user is correctly handled, and he/she are advised on how to proceed by providing the necessary valid data).
+
+•	All testing was completed in Gitpod and also in the Heroku terminal.
+
+•	Friends, family members and football fans were asked to review the app and documentation to point out any bugs and/or user experience issues.
+
 Known Bugs
 •	On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
 o	A white gap can be seen to the right of the footer and navigation bar as a result.

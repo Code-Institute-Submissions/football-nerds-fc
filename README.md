@@ -129,43 +129,34 @@ PEP8 Online Checker was used to validate all the code on the Python file for thi
 
 The [Am I Responsive?](https://ui.dev/amiresponsive) website design tester was used to test the responsiveness of this website (though, as mentioned on the "Features" section of this README.md file, this app works on all device sizes, but it's not responsive on all device sizes – it's a Python command-line app built using Python alone, so no HTML, CSS [media queries would have been used if it was a website, for example] or JavaScript were used, which is why it may not be fully responsive in smaller devices [tablets, smartphones, etc.]). [Screenshot here](assets/docs/am-i-responsive-results.png)
 
-Testing User Stories from User Experience (UX) Section
-•	First Time Visitor Goals
-i.	As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-a.	Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text and a "Learn More" Call to action button.
-b.	The main points are made immediately with the hero image
-c.	The user has two options, click the call to action buttons or scroll down, both of which will lead to the same place, to learn more about the organisation.
-ii.	As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
-a.	The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-b.	At the bottom of the first 3 pages there is a redirection call to action to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
-c.	On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is.
-iii.	As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-a.	Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-b.	The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-c.	At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the organisation on social media which highlights the links to them.
-•	Returning Visitor Goals
-i.	As a Returning Visitor, I want to find the new programming challenges or hackathons.
-a.	These are clearly shown in the banner message.
-b.	They will be directed to a page with another hero image and call to action.
-ii.	As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-a.	The navigation bar clearly highlights the "Contact Us" Page.
-b.	Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-c.	The footer contains links to the organisations Facebook, Twitter and Instagram page as well as the organization's email.
-d.	Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-e.	The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
-iii.	As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-a.	The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
-b.	Alternatively, the user can scroll to the bottom of the Home page to find the Facebook Group redirect card and can easily join by clicking the "Join Now!" button which like any external link, will open in a new tab to ensure they can get back to the website easily.
-c.	If the user is on the "Our Favourites" page they will also be greeted with a call to action button to invite the user to the Facebook group. The user is incentivized as they are told there is a weekly favourite product posted in the group.
-•	Frequent User Goals
-i.	As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-a.	The user would already be comfortable with the website layout and can easily click the banner message.
-ii.	As a Frequent User, I want to check to see if there are any new blog posts.
-a.	The user would already be comfortable with the website layout and can easily click the blog link
-iii.	As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-a.	At the bottom of every page their is a footer which content is consistent throughout all pages.
-b.	To the right hand side of the footer the user can see "Subscribe to our Newsletter" and are prompted to Enter their email address.
-c.	There is a "Submit" button to the right hand side of the input field which is located close to the field and can easily be distinguished.
+### Testing User Stories from the User Experience (UX) Section
+
+#### o	First-time Visitor Goals
+
+**i.**	As a first-time user, I want to easily understand the main purpose of the game and how to play it.
+
+a.	Upon entering the site, users are automatically greeted with a clean and easily readable message explaining what the game is about and with the first of ten questions. The call-to-action is obvious: read the question, read the options ("1", "2" and "3") and choose the correct one, which will take the user to the next question. The many friends and family members who tested this app found it very simple to understand.
+
+**ii.** As a first-time user, I want to navigate through the game with ease without encountering any error messages or getting stuck.
+
+a.	All the features of the game were thoroughly tested, including all the inputs and error-handling functionalities, and no error messages were found. All user feedback mentions that the game was easy to play and no error messages were ever displayed.
+
+**iii.**    As a first-time user, I want to be able to test my football knowledge and answer correctly to as many questions as possible.
+
+a.	All users who tested the game found the questions challenging and a true test to any football fan. Many also mentioned that they've learned a bit about football while playing it.
+
+#### o	Returning Visitor Goals
+
+**i.**	As a returning user, I want to play again and try and answer different football questions to further test my football knowledge.
+
+a.	All returning users mentioned that they played this game endless times, and the fact that the program randomly chooses different questions every time a new game begins makes it exciting to play and a good source of football knowledge.
+
+#### o	Frequent User Goals
+
+**i.**	As a frequent user, I want to play again and again to try and answer all the football questions of this game to fully test my football knowledge.
+
+a.	Most users who tested this app mentioned that they've been playing with it almost every day and competing with other friends and family members. This is good feedback, as they still report that no errors or issues were found and that they're still learning from this app.
+
 Further Testing
 •	The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 •	The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.

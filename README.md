@@ -169,10 +169,26 @@ a.	Most users who tested this app mentioned that they've been playing with it al
 
 •	Friends, family members and football fans were asked to review the app and documentation to point out any bugs and/or user experience issues.
 
-Known Bugs
-•	On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-o	A white gap can be seen to the right of the footer and navigation bar as a result.
-•	On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+## Known Bugs
+
+### Fixed Bugs
+
+•	All answers were coming up as incorrect. This was due to the user's inputs being seen by the app as strings. Converting the user's inputs into integers fixed this.
+
+•	Then, any integer would be accepted, and anything that was not an integer would throw an error. An if statement with a range to validate the user's input (wrapping the now nested if statement that checks if the answer is right and increments the score by 1) was added to fix it.
+
+•	But the player was allowed to continue playing if an invalid integer was entered, which shouldn't happen (he/she should stay stuck on the same question until a valid input was provided), and any other input type other than an integer would still throw an error. A while loop with try/except validation was added to look for and handle input errors.
+
+•	The app wasn't accepting answer "3" as a valid answer. This was because the range in the if statement was set between "1" and "3" (the range stops before the last number in it, only considering the second last number), so the range was reset between "1" and "4" and this resolved the issue.
+
+•	In the option to play again, it was asking the same questions of the previous 10-question sample. This was fixed by placing the previously used sample variable inside the play-again if statement.
+
+•	In the option to play again, it was not accepting uppercase "Y" or uppercase "N" as valid input. A lower method was added to the string input conversion to resolve the issue.
+
+### Unfixed Bugs
+
+•	No known bugs are believed to exist on this app.
+
 Deployment
 GitHub Pages
 The project was deployed to GitHub Pages using the following steps...

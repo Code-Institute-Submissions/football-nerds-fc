@@ -219,6 +219,8 @@ GitHub is not built to handle backend languages like Python, so I used Heroku to
 
 •	Stack Overflow was also used as a source of knowledge and code. For example, I complemented Mike Dane's multiple choice quiz idea with [this page on Stack Overflow](https://stackoverflow.com/questions/26792705/how-to-create-a-simple-quiz-in-python-with-multiple-topics). [This page on Stack Overflow](https://stackoverflow.com/questions/44306681/adding-validation-to-answer-in-quiz-gives-wrong-answers) also helped with the issues I was having with validation. And I also found out about the Random shuffle method (used in the earlier stages of the coding process) on [this page on Stack Overflow](https://stackoverflow.com/questions/30970070/how-to-randomize-order-of-questions-in-a-quiz-in-python), which was later replaced by the Random sample method I found on [this page on Stack Overflow](https://stackoverflow.com/questions/22741319/what-does-the-random-sample-method-in-python-do).
 
+•	[This page](https://pynative.com/python-random-sample/) on [PYnative's website](https://pynative.com/) was also particularly useful when using the Random sample method.
+
 ### Content
 
 •	All football questions were taken from [this page](https://www.goal.com/en/news/best-football-quiz-questions-trivia-answers/1dfwcyp3388zg1lon8wlit8q42) on the [Goal website](https://www.goal.com/en-ie).

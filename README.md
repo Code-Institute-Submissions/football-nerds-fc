@@ -25,7 +25,7 @@ It’s a multiple choice football quiz – the user has to try and answer ten fo
 
 ## Flowchart
 
-Flowchart – [View](assets/flowchart/flowchart-football-nerds-fc.jpeg)
+![Flowchart](assets/flowchart/flowchart-football-nerds-fc.jpeg)
 
 In order to better visualize the steps required to build and play this game, I created a flowchart using Lucidchart, which allowed me to go through each part step-by-step and to understand what objects, features and functionalities were necessary and how to code them based on the user’s potential needs while using the app at every step of the way.
 

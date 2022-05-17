@@ -209,16 +209,26 @@ GitHub is not built to handle backend languages like Python, so I used Heroku to
 14.	Enter "git push heroku main".
 15.	To view the deployed app, go back to Heroku's dashboard, click on the app's name on the list of apps and click on "Open app".
 
-Credits
-Code
-•	The full-screen hero image code came from this StackOverflow post
-•	Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
-•	MDN Web Docs : For Pattern Validation code. Code was modified to better fit my needs and to match an Irish phone number layout to ensure correct validation. Tutorial Found Here
-Content
-•	All content was written by the developer.
-•	Psychological properties of colours text in the README.md was found here
-Media
-•	All Images were created by the developer.
-Acknowledgements
+## Credits
+
+### Code
+
+•	The idea to build a multiple choice quiz came from [Mike Dane's Giraffe Academy Python tutorial](https://www.youtube.com/watch?v=rfscVS0vtbw), at 3:57:36. The whole tutorial is, in my opinion, the best Python tutorial for beginners that can be found online, and I've learned much while watching it. It was crucial for me to understand some of the Python's concepts used on this app, and some of my code was based on Mike's code on this tutorial, though most of it got significantly transformed as I coded this app in order to meet my specific ideas and the project's requirements.
+
+•	The W3Schools Online Web Tutorials were a huge help throughout the creation of this app – some of them were extensively used as a source of code knowledge/confirmation. A good example of this was the tutorial about [Python JSON](https://www.w3schools.com/python/python_json.asp), which allowed me to use Python's built-in JSON package to work with JSON data (to import the .json file with the question prompts – my mentor's guidance was also particularly important here).
+
+•	Stack Overflow was also used as a source of knowledge and code. For example, I complemented Mike Dane's multiple choice quiz idea with [this page on Stack Overflow](https://stackoverflow.com/questions/26792705/how-to-create-a-simple-quiz-in-python-with-multiple-topics). [This page on Stack Overflow](https://stackoverflow.com/questions/44306681/adding-validation-to-answer-in-quiz-gives-wrong-answers) also helped with the issues I was having with validation. And I also found out about the Random shuffle method (used in the earlier stages of the coding process) on [this page on Stack Overflow](https://stackoverflow.com/questions/30970070/how-to-randomize-order-of-questions-in-a-quiz-in-python), which was later replaced by the Random sample method I found on [this page on Stack Overflow](https://stackoverflow.com/questions/22741319/what-does-the-random-sample-method-in-python-do).
+
+### Content
+
+•	All football questions were taken from [this page](https://www.goal.com/en/news/best-football-quiz-questions-trivia-answers/1dfwcyp3388zg1lon8wlit8q42) on the [Goal website](https://www.goal.com/en-ie).
+
+### Acknowledgements
+
 •	My Mentor for continuous helpful feedback.
+
 •	Tutor support at Code Institute for their support.
+
+•	[Code Institute](https://codeinstitute.net/ie/)'s Slack community for their support.
+
+•	All family members, friends and football fans who helped testing this app.

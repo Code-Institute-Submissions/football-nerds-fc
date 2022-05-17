@@ -189,37 +189,26 @@ a.	Most users who tested this app mentioned that they've been playing with it al
 
 •	No known bugs are believed to exist on this app.
 
-Deployment
-GitHub Pages
-The project was deployed to GitHub Pages using the following steps...
-1.	Log in to GitHub and locate the GitHub Repository
-2.	At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-o	Alternatively Click Here for a GIF demonstrating the process starting from Step 2.
-3.	Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4.	Under "Source", click the dropdown called "None" and select "Master Branch".
-5.	The page will automatically refresh.
-6.	Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
-Forking the GitHub Repository
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
-1.	Log in to GitHub and locate the GitHub Repository
-2.	At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3.	You should now have a copy of the original repository in your GitHub account.
-Making a Local Clone
-1.	Log in to GitHub and locate the GitHub Repository
-2.	Under the repository name, click "Clone or download".
-3.	To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4.	Open Git Bash
-5.	Change the current working directory to the location where you want the cloned directory to be made.
-6.	Type git clone, and then paste the URL you copied in Step 3.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-7.	Press Enter. Your local clone will be created.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-Click Here to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+## Deployment
+
+GitHub is not built to handle backend languages like Python, so I used Heroku to deploy this project (all code was pushed to GitHub as normal, but the app was deployed using Heroku). There was no need to use "pip3 freeze > requirements.txt" to add any dependencies to the requirements.txt file before deployment as only the built-in Random package was imported (so the sample method could be used – no external libraries were used on this project). The project was deployed using the following steps...
+
+1.	Create an account in [Heroku](https://dashboard.heroku.com/apps) and log in.
+2.	On Heroku's dashboard, click on "Create New App".
+3.	Enter a unique app name.
+4.	Select your region.
+5.	Click on "Create App".
+6.	Click on the "Settings" tab, scroll down and click on "Reveal Config Vars".
+7.	Enter "PORT" into the "Key" field and "8000" into the "Value" field and click on "Add" (no credentials were used, so no need for a creds.json file or to add any credentials).
+8.	Scroll down to the buildpack section, click on "Add buildpack", select "python" and click on "Save changes".
+9.	Repeat the last step to add "nodejs". The buildpacks must be in this order. Drag them to move them into the correct order if not.
+10.	Due to a security issue, Heroku has disabled automated deployments from GitHub, and there's no indication if or when they will reactivate this, so the deployment process from this moment on had to be changed. In order to deploy my project while this situation persists, deployment had to be done from the project's Gitpod workspace following the next four steps.
+11.	On the project's terminal/workspace on Gitpod, enter "heroku login -i".
+12.	Enter the email address and the password previously set up on Heroku when the account was created.
+13.	Enter "heroku git:remote -a" followed by the project's name on Heroku (in this case, "heroku git:remote -a football-nerds-fc").
+14.	Enter "git push heroku main".
+15.	To view the deployed app, go back to Heroku's dashboard, click on the app's name on the list of apps and click on "Open app".
+
 Credits
 Code
 •	The full-screen hero image code came from this StackOverflow post

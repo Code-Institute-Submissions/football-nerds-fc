@@ -135,7 +135,7 @@ The [Am I Responsive?](https://ui.dev/amiresponsive) website design tester was u
 
 **i.**	As a first-time user, I want to easily understand the main purpose of the game and how to play it.
 
-a.	Upon entering the site, users are automatically greeted with a clean and easily readable message explaining what the game is about and with the first of ten questions. The call-to-action is obvious: read the question, read the options ("1", "2" and "3") and choose the correct one, which will take the user to the next question. The many friends and family members who tested this app found it very simple to understand.
+a.	When the game is first ran, users are automatically greeted with a clean and easily readable message explaining what the game is about and with the first of ten questions. The call-to-action is obvious: read the question, read the options ("1", "2" and "3") and choose the correct one, which will take the user to the next question. The many friends and family members who tested this app found it very simple to understand.
 
 **ii.** As a first-time user, I want to navigate through the game with ease without encountering any error messages or getting stuck.
 

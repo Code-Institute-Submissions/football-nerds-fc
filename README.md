@@ -111,15 +111,17 @@ Not all things can be represented using, for example, strings, numbers or Boolea
 
 1.	[random Python package](https://docs.python.org/3/library/random.html):
 o	Python's built-in random package was imported so the sample method could be used to retrieve a sample of ten questions from a .json file every time a new game starts.
-2.	Snipping tool:
+2.	[JSON Python package](https://www.w3schools.com/python/python_json.asp):
+o	Python's built-in JSON package, commonly used to work with JSON data, was imported to allow the import of the .json file with the question prompts.
+3.	Snipping tool:
 o	A snipping tool was used to create all the screenshots on this README.md file.	
-3.	[Git](https://git-scm.com/):
+4.	[Git](https://git-scm.com/):
 o	Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
-4.	[GitHub](https://github.com/):
+5.	[GitHub](https://github.com/):
 o	GitHub is used to store the project's code after being pushed from Git.
-5.	[Heroku](https://dashboard.heroku.com/apps):
+6.	[Heroku](https://dashboard.heroku.com/apps):
 o	Heroku was used to deploy the live project.
-6.	[Lucidchart](https://lucid.app/documents#/dashboard?folder_id=home):
+7.	[Lucidchart](https://lucid.app/documents#/dashboard?folder_id=home):
 o	Lucidchart was used to create the flowchart during the design process.
 
 ## Testing

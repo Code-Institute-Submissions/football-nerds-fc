@@ -193,7 +193,7 @@ a.	Most users who tested this app mentioned that they've been playing with it al
 
 ## Deployment
 
-GitHub is not built to handle backend languages like Python, so I used Heroku to deploy this project (all code was pushed to GitHub as normal, but the app was deployed using Heroku). There was no need to use "pip3 freeze > requirements.txt" to add any dependencies to the requirements.txt file before deployment as only the built-in Random package was imported (so the sample method could be used – no external libraries were used on this project). The project was deployed using the following steps...
+GitHub is not built to handle backend languages like Python, so I used Heroku to deploy this project (all code was pushed to GitHub as normal, but the app was deployed using Heroku). There was no need to use "pip3 freeze > requirements.txt" to add any dependencies to the requirements.txt file before deployment as only built-in Python packages were imported (no external libraries were used on this project). The project was deployed using the following steps...
 
 1.	Create an account in [Heroku](https://dashboard.heroku.com/apps) and log in.
 2.	On Heroku's dashboard, click on "Create New App".
